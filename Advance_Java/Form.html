@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="reg.css">
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+</head>
+<body>
+	<marquee class="mar">Coder Technologies Provides <b>100% PLACEMENTS</b> To All.</marquee>
+	<form action="script.js">
+		<div class="ab">
+			<h2>Registration Form</h2>
+			<label>First Name : </label><br>
+			<input type="text" id="fname" placeholder="Enter ur first name" name="fname" required="required"> 
+			<br>
+			
+			<label>Last Name : </label><br>
+			<input type="text" id="fname" placeholder="Enter ur last name" name="lname" required="required">
+			<br>
+			
+			<label>Email : </label><br>
+			<input type="email" id="email" placeholder="Enter email" name="email" required="required" pattern="[0-9A-Za-z.@]{}">
+			<br>
+			
+			<label >Contact : </label><br>
+			<input type="text" placeholder="Enter Contact" name="contact" required="required" pattern="[0-9]{10}">
+			<br>
+			
+			<label>DOB</label>
+			<input type="date" name="dob" placeholder="DOB" required="required">
+			<br>
+			<label>Address : </label><br>
+			 <textarea  rows="5" cols="20" id="add" placeholder="Enter Address" required="required"></textarea>
+			<br>
+			
+			<label>Courses : </label><input type="checkbox" name="PHP" value="PHP" required="required">PHP  
+					 <input type="checkbox" name="PJD" value="PJD">PJD
+					 <input type="checkbox" name="PJS" value="PJS">PJS
+					 <input type="checkbox" name="PJE" value="PJE">PJE
+			<br><br>	 
+			
+			<label>Gender : </label><input type="radio" name="sex" value="male" checked>Male
+					<input type="radio" name="sex" value="female">Female
+			<br><br>
+			
+			<table>
+				<tr><td id="tr">SSC</td>
+					<td id="tr">HSC</td>
+					<td id="tr">Graduation</td>
+				</tr>
+				<tr><td ><input id="td" type="text" name="ssc" placeholder="SSC Marks" required="required" pattern="[0-9]{2}"></td>
+					<td ><input id="td" type="text" name="hsc" placeholder="HSC Marks" required="required" pattern="[0-9]{2}"></td>
+					<td ><input id="td" type="text" name="diploma" placeholder="Graduation Marks" required="required" pattern="[0-9]{2}"></td>
+				</tr>
+			</table>
+			<br>
+			<label>Our Training Centers : </label><select name="area" required="required">
+				  <option value="Nerul">Nerul</option>
+				  <option value="Vashi">Vashi</option>
+				  <option value="Thane">Thane</option>
+				  <option value="Andheri">Andheri</option>
+				 </select>
+			<br><br>
+			
+			<label>Upload Your Resume Here : </label>
+			<input class="re" type="file" name="resume" required="required">
+			<br><br>
+			
+			<input type="submit" name="submit" value="Submit" class="btn">
+			<input type="reset" name="reset" value="Reset" class="btn1">
+		</div>
+		<script src="script.js"></script>
+	</form>
+		
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prac11</title>
+</head>
+<body>
+
+	<h4>For-In Loop/ Enhanced for loop</h4>	
+
+	<p id="demo"> </p>
+
+	<script type="text/javascript">
+		var txt="";
+		var person=[fname="Abhijit",lname="Sujeet",age=22];
+		
+		for(var x in person)
+		{
+			txt=txt+" "+person[x];
+		}
+		document.getElementById("demo").innerHTML=txt;
+	</script>
+</body>
+</html>

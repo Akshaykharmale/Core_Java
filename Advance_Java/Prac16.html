@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prac16</title>
+</head>
+<body>
+	<p>If time is less than 16 it will show "Have a nice day". <br>
+	else it will show "Good Night"</p>
+	<button onclick="myFunction()">Clik Me</button>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function myFunction()
+		{
+			var x="";
+			var time=new Date().getHours();
+			if(time<16)
+				x="Have a nice day!";
+			else
+				x="Good Night";
+			document.getElementById("demo").innerHTML=x;
+		}
+		
+	</script>
+</body>
+</html>
